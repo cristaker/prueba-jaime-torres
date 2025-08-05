@@ -19,7 +19,7 @@ public class ExcelExporterService {
         try (Workbook workbook = new HSSFWorkbook(); ByteArrayOutputStream out = new ByteArrayOutputStream()) {
             Sheet sheet = workbook.createSheet("Impuestos");
             Row header = sheet.createRow(0);
-            String[] columns = {"Sticker", "Fecha Movimiento", "Fecha Recaudo", "Tipo Horario", "Numero Id", "Numero Formulario", "Valor"};
+            String[] columns = {"Información del Sticker", "Fecha de Movimiento", "Fecha de Recaudo", "Tipo de Horario", "Número de identificación", "Número de Formulario", "Valor"};
             for (int i = 0; i < columns.length; i++) {
                 header.createCell(i).setCellValue(columns[i]);
             }
