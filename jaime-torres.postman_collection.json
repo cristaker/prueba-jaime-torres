@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "33d216d0-cbf1-4d05-bb11-9ba1e9652cf3",
+		"name": "jaime-torres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25724386"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/impuestos/cargar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNjI4NzEsImV4cCI6MTc1NDI2NjQ3MX0.GjF-QAMiQa3coKRkmsfTsEBAJH5Kq5iILl8_Z2pJe0Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/crist/Downloads/Proceso de selección Jaime Torres C y Cia - Prueba técnica/DATOS.TXT"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/impuestos/cargar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"impuestos",
+						"cargar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/impuestos/fecha?fecha=11/03/2025",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/impuestos/fecha?fecha=12/13/2025",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"impuestos",
+						"fecha"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "12/13/2025"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/impuestos/resumen?tipo=N",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/impuestos/resumen?tipo=N",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"impuestos",
+						"resumen"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "N"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/impuestos/sticker/1097020163871",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/impuestos/sticker/1097020163871",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"impuestos",
+						"sticker",
+						"1097020163871"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/impuestos/export?fecha=11/03/2025",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/impuestos/export?fecha=11/03/2025",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"impuestos",
+						"export"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "11/03/2025"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

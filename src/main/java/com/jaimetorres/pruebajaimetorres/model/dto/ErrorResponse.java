@@ -1,0 +1,14 @@
+package com.jaimetorres.pruebajaimetorres.model.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ErrorResponse {
+    private Boolean status;
+    private int code;
+    private String message;
+}
